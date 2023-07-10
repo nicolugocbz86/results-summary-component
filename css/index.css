@@ -1,5 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+/* primary */
+.color {background-color: hsl(0, 100%, 67%);}
+.color {background-color: hsl(39, 100%, 56%);}
+.color {background-color: hsl(166, 100%, 37%);}
+.color {background-color: hsl(234, 85%, 45%);}
+/* gradients */
+.color {background-color: hsl(252, 100%, 67%);}
+.color {background-color: hsl(241, 81%, 54%);}
+.color {background-color: hsla(256, 72%, 46%, 1);}/* circle */
+.color {background-color: hsla(241, 72%, 46%, 0);}/* circle */
+/* neutral */
+.color {background-color: hsl(0, 0%, 100%);}
+.color {background-color: hsl(221, 100%, 96%);}
+.color {background-color: hsl(241, 100%, 89%);}
+.color {background-color: hsl(224, 30%, 27%);}
+
+
 /* UNIVERSAL */
 
     * {
@@ -14,7 +31,29 @@
     @media screen and (min-width: 0px) {
 
         /* TAGS */
+
+            body {
+                margin: auto;
+                width: 375px;
+                height: 809px;
+                display: grid;
+                justify-content: center;
+                align-content: center;
+                text-align: center;
+            }
+
         /* CLASS */
+
+            .results-container,
+            .results,
+            .results div:nth-of-type(1) {
+                display: flex;
+            }
+
+            .results-container {
+                flex-direction: column;
+            }
+
         /* ID */
 
     }
@@ -25,4 +64,13 @@
         /* CLASS */
         /* ID */
 
+    }
+
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+    }
+    .attribution a {
+        text-decoration: none;
+        color: hsl(228, 45%, 44%);
     }
