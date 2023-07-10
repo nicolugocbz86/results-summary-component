@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
 
 /* primary */
 .color {background-color: hsl(0, 100%, 67%);}
@@ -23,7 +23,7 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Hanken Grotesk', sans-serif;
     }
 
 /* MEDIA QUERIES */
@@ -42,19 +42,141 @@
                 text-align: center;
             }
 
+            p {
+                font-size: 18px;
+            }
+
         /* CLASS */
 
+            .card,
+            .card-header,
+            .card-footer,
             .results-container,
             .results,
             .results div:nth-of-type(1) {
                 display: flex;
             }
 
+            .card,
+            .card-header,
+            .card-footer,
             .results-container {
                 flex-direction: column;
             }
 
+            .card-header {
+                background: linear-gradient(hsl(252, 100%, 67%),
+                                            hsl(241, 81%, 54%));
+                color: hsl(241, 100%, 89%);
+                border-radius: 0 0 2rem 2rem;
+                padding: 1.8rem;
+                gap: 1.4rem;
+            }
+
+            .card-header div {
+                margin: auto;
+                width: 40%;
+                border-radius: 100%;
+                background: linear-gradient(hsla(256, 72%, 46%, 1),
+                                            hsla(241, 72%, 46%, 0));
+                padding: 1rem;
+            }
+
+            .card-header div p:nth-of-type(1) {
+                color: hsl(0, 0%, 100%);
+                font-size: 3.4rem;
+                font-weight: 700;
+            }
+
+            .card-header h1 {
+                color: hsl(0, 0%, 100%);
+            }
+
+            .card-header p:last-of-type {
+                margin: auto;
+                width: 90%;
+            }
+
+            .card-footer {
+                padding: 1rem;
+                gap: 1rem;
+            }
+
+            .card-footer h2 {
+                text-align: left;
+                color: hsl(224, 30%, 27%);
+            }
+
+            .card-footer a {
+                text-decoration: none;
+                font-weight: 700;
+                background-color: hsl(224, 30%, 27%);
+                color: hsl(0, 0%, 100%);
+                border-radius: 2rem;
+                padding: 1rem;
+            }
+
+            .card-footer a:active {
+                background: linear-gradient(hsl(252, 100%, 67%),
+                                            hsl(241, 81%, 54%));
+            }
+
+            .results-container {
+                gap: .8rem;
+            }
+
+            .results {
+                justify-content: space-between;
+                font-weight: 700;
+                border-radius: .6rem;
+                padding: 1rem;
+            }
+
+            .results div:nth-of-type(1) {
+                gap: .8rem;
+            }
+
+            .results div:nth-of-type(2) p {
+                color: hsl(241, 100%, 89%);
+            }
+
+            .results div:nth-of-type(2) p span {
+                color: hsl(224, 30%, 27%);
+            }
+
         /* ID */
+
+            #reaction {
+                background-color: hsla(0, 100%, 67%, 0.1);
+            }
+
+            #reaction div:nth-of-type(1) {
+                color: hsl(0, 100%, 67%);
+            }
+
+            #memory {
+                background-color: hsla(39, 100%, 56%, 0.1);
+            }
+
+            #memory div:nth-of-type(1) {
+                color: hsl(39, 100%, 56%);
+            }
+
+            #verbal {
+                background-color: hsla(166, 100%, 37%, 0.1);
+            }
+
+            #verbal div:nth-of-type(1) {
+                color: hsl(166, 100%, 37%);
+            }
+
+            #visual {
+                background-color: hsla(234, 85%, 45%, 0.1);
+            }
+
+            #visual div:nth-of-type(1) {
+                color: hsl(234, 85%, 45%);
+            }
 
     }
 
@@ -72,5 +194,5 @@
     }
     .attribution a {
         text-decoration: none;
-        color: hsl(228, 45%, 44%);
+        color: hsl(234, 85%, 45%);
     }
