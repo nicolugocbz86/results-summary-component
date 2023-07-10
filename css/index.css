@@ -40,6 +40,7 @@
                 justify-content: center;
                 align-content: center;
                 text-align: center;
+                gap: 1rem;
             }
 
             p {
@@ -62,6 +63,10 @@
             .card-footer,
             .results-container {
                 flex-direction: column;
+            }
+
+            .card {
+                margin: auto;
             }
 
             .card-header {
@@ -98,7 +103,7 @@
             }
 
             .card-footer {
-                padding: 1rem;
+                padding: 1.4rem;
                 gap: 1rem;
             }
 
@@ -183,7 +188,37 @@
     @media screen and (min-width: 401px) {
 
         /* TAGS */
+
+            body {
+                width: 1440px;
+                height: 1080px;
+            }
+
         /* CLASS */
+
+            .card {
+                flex-direction: row;
+                border-radius: 2rem;
+            }
+
+            .card {
+                width: 80%;
+                box-shadow: 0 0 1rem 1rem hsl(241, 100%, 89%);
+            }
+
+            .card-header,
+            .card-footer {
+                width: 50%;
+            }
+
+            .card-header {
+                border-radius: 2rem;
+            }
+
+            .card-header div {
+                width: 45%;
+            }
+
         /* ID */
 
     }
